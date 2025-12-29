@@ -1,0 +1,4 @@
+FUNC __main__.calculate_z_serial_purepython 24.5781 1766982527.2477 24.6094 1766982527.2713 1
+FUNC __main__.calc_pure_python 23.8594 1766982527.2458 24.6094 1766982527.2715 0
+CMDLINE /Users/shawnteo/.pyenv/versions/3.13.0/envs/high_perf_python/bin/python julia1_memoryprofiler.py
+MEM 0.156250 1766982527.1848

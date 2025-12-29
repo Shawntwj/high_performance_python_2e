@@ -95,8 +95,8 @@ def calc_pure_python(draw_output, desired_width, max_iterations):
     assert sum(output) == 33219980  # this sum is expected for 1000^2 grid with 300 iterations
 
     if draw_output:
-        #show_false_greyscale(output, width, height, max_iterations)
-        show_greyscale(output, width, height, max_iterations)
+        show_false_greyscale(output, width, height, max_iterations)
+        # show_greyscale(output, width, height, max_iterations)
 
 
 if __name__ == "__main__":

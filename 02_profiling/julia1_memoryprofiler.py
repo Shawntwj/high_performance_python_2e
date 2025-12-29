@@ -56,12 +56,17 @@ def calc_pure_python(draw_output, desired_width, max_iterations):
     secs = end_time - start_time
     print(calculate_z_serial_purepython.__name__ + " took", secs, "seconds")
 
-    assert sum(output) == 33219980  # this sum is expected for 1000^2 grid with 300 iterations
+    # assert sum(output) == 33219980  # this sum is expected for 1000^2 grid with 300 iterations
 
 
 # Calculate the Julia set using a pure Python solution with
 # reasonable defaults for a laptop
 # set draw_output to True to use PIL to draw an image
 #calc_pure_python(draw_output=False, desired_width=1000, max_iterations=300)
-calc_pure_python(draw_output=False, desired_width=1000, max_iterations=300)
+calc_pure_python(draw_output=False, desired_width=100, max_iterations=200)
 
+# use less RAM by rewriting this function to work more efficiently 
+# use more RAM and save CPU cycles 
+# trend over lines is will lead to better inisght as GC is not instant so obj can linger in the pool for awhile under the hood
+# python -m memory_profiler julia1_memoryprofiler.py
+# mprof run julia1_memoryprofiler.py

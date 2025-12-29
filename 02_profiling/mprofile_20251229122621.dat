@@ -1,0 +1,2 @@
+CMDLINE /Users/shawnteo/.pyenv/versions/3.13.0/envs/high_perf_python/bin/python julia1_memoryprofiler.py
+MEM 0.156250 1766982381.8632
